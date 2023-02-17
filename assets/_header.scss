@@ -1,0 +1,38 @@
+@use "./variables";
+
+.header {
+  &__sale {
+    background-color: variables.$orange;
+    padding: 10px 15px 10px 15px;
+  }
+
+  &__sale__text {
+    color: variables.$white;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 15.6px;
+    letter-spacing: 1px;
+
+    @media (min-width: 750px) {
+      font-size: 1.3rem;
+      line-height: 16.9px;
+    }
+  }
+
+  &__nav {
+    position: relative;
+
+    padding: 10px 0 10px 0;
+  }
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__item__list {
+  display: flex;
+  align-items: center;
+}

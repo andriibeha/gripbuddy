@@ -1,0 +1,33 @@
+@use "./variables";
+
+.product__container {
+  margin: 20px;
+  text-align: center;
+
+  @media (min-width: 750px) {
+    margin: 4rem;
+  }
+
+  &__title {
+    color: variables.$black;
+    font-size: 3rem;
+    line-height: 39px;
+
+    margin-bottom: 20px;
+
+    @media (min-width: 750px) {
+      font-size: 4rem;
+      line-height: 52px;
+    }
+  }
+
+  &__description {
+    font-size: 1.5rem;
+    line-height: 27px;
+
+    @media (min-width: 750px) {
+      font-size: 1.6rem;
+      line-height: 29px;
+    }
+  }
+}
