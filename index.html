@@ -111,7 +111,7 @@
                   src="./assets/grip1_black.webp"
                   alt="img"
                   class="product__details__img"
-                  id="product1Black"
+                  id="product1Img"
                 />
               </div>
 
@@ -148,11 +148,11 @@
                 </p>
 
                 <p class="product__details__color">Color</p>
-                <ul class="product__details__color__list">
+                <ul class="product__details__color__list" id="colorSwitcher">
                   <li class="product__details__color__item">
                     <button
                       type="button"
-                      class="product__details__color__button product__details__color__button__active"
+                      class="product__details__color__button product__details__color__button__active color__button"
                       id="black"
                     >
                       Black
@@ -161,7 +161,7 @@
                   <li class="product__details__color__item">
                     <button
                       type="button"
-                      class="product__details__color__button"
+                      class="product__details__color__button color__button"
                       id="gray"
                     >
                       Gray
@@ -170,7 +170,7 @@
                   <li class="product__details__color__item">
                     <button
                       type="button"
-                      class="product__details__color__button"
+                      class="product__details__color__button color__button"
                       id="blackGrey"
                     >
                       2 in 1 Bundle (Black+Gray)
@@ -187,7 +187,9 @@
                   >
                     -
                   </button>
-                  <p class="product__details__quantity__counter">1</p>
+                  <p class="product__details__quantity__counter" id="counter">
+                    1
+                  </p>
                   <button
                     type="button"
                     id="plus"
@@ -297,15 +299,17 @@
                 <div class="product__details__quantity__calculator">
                   <button
                     type="button"
-                    id="minus"
+                    id="minus2"
                     class="product__details__quantity__calculator__button product__details__quantity__calculator__minus"
                   >
                     -
                   </button>
-                  <p class="product__details__quantity__counter">1</p>
+                  <p class="product__details__quantity__counter" id="counter2">
+                    1
+                  </p>
                   <button
                     type="button"
-                    id="plus"
+                    id="plus2"
                     class="product__details__quantity__calculator__button product__details__quantity__calculator__plus"
                   >
                     +
@@ -450,8 +454,8 @@
                   <li class="product__details__color__item">
                     <button
                       type="button"
-                      class="product__details__color__button product__details__color__button__active"
-                      id="black"
+                      class="product__details__color__button product__details__color__button__active weight__button"
+                      id="w100lb"
                     >
                       100LB
                     </button>
@@ -459,8 +463,8 @@
                   <li class="product__details__color__item">
                     <button
                       type="button"
-                      class="product__details__color__button"
-                      id="gray"
+                      class="product__details__color__button weight__button"
+                      id="w150lb"
                     >
                       150LB
                     </button>
@@ -468,8 +472,8 @@
                   <li class="product__details__color__item">
                     <button
                       type="button"
-                      class="product__details__color__button"
-                      id="blackGrey"
+                      class="product__details__color__button weight__button"
+                      id="w200lb"
                     >
                       200LB
                     </button>
@@ -477,8 +481,8 @@
                   <li class="product__details__color__item">
                     <button
                       type="button"
-                      class="product__details__color__button"
-                      id="black"
+                      class="product__details__color__button weight__button"
+                      id="w250lb"
                     >
                       250LB
                     </button>
@@ -486,8 +490,8 @@
                   <li class="product__details__color__item">
                     <button
                       type="button"
-                      class="product__details__color__button"
-                      id="gray"
+                      class="product__details__color__button weight__button"
+                      id="w300lb"
                     >
                       300LB
                     </button>
@@ -495,8 +499,8 @@
                   <li class="product__details__color__item">
                     <button
                       type="button"
-                      class="product__details__color__button"
-                      id="blackGrey"
+                      class="product__details__color__button weight__button"
+                      id="w350lb"
                     >
                       350LB
                     </button>
@@ -507,15 +511,17 @@
                 <div class="product__details__quantity__calculator">
                   <button
                     type="button"
-                    id="minus"
+                    id="minus3"
                     class="product__details__quantity__calculator__button product__details__quantity__calculator__minus"
                   >
                     -
                   </button>
-                  <p class="product__details__quantity__counter">1</p>
+                  <p class="product__details__quantity__counter" id="counter3">
+                    1
+                  </p>
                   <button
                     type="button"
-                    id="plus"
+                    id="plus3"
                     class="product__details__quantity__calculator__button product__details__quantity__calculator__plus"
                   >
                     +
@@ -844,5 +850,9 @@
         </ul>
       </div>
     </footer>
+
+    <script defer src="./assets/counter.js"></script>
+    <script defer src="./assets/colorSwitcher.js"></script>
+    <script defer src="./assets/weightSwitcher.js"></script>
   </body>
 </html>
